@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <div class="header-top">
+                <button id="backToArcade" class="back-btn">← BACK TO ARCADE</button>
+                <h1>SPACE INVADERS</h1>
+            </div>
+            <div class="score-board">
+                <div class="score">SCORE: <span id="score">0</span></div>
+                <div class="lives">LIVES: <span id="lives">3</span></div>
+            </div>
+        </div>
+        
+        <div class="game-area">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+            
+            <div id="startScreen" class="screen">
+                <h2>SPACE INVADERS</h2>
+                <p>Use ARROW KEYS to move, SPACEBAR to shoot</p>
+                <button id="startBtn" class="btn">START GAME</button>
+                <div class="high-scores">
+                    <h3>HIGH SCORES</h3>
+                    <div id="highScoreList"></div>
+                </div>
+            </div>
+            
+            <div id="gameOverScreen" class="screen hidden">
+                <h2>GAME OVER</h2>
+                <p>Your Score: <span id="finalScore">0</span></p>
+                <button id="restartBtn" class="btn">PLAY AGAIN</button>
+                <button id="menuBtn" class="btn">MAIN MENU</button>
+                <button id="backToArcadeBtn" class="btn">BACK TO ARCADE</button>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <p>CONTROLS: ← → Move | SPACE Shoot</p>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html> 

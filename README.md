@@ -52,6 +52,15 @@ arcade/
 ├── 📄 arcade.js               # Arcade menu logic
 ├── 📄 style.css               # Main arcade styling
 ├── 📄 README.md               # This file
+├── 📄 BUILD.md                # Build instructions for native apps
+├── 📄 package.json            # Node.js dependencies and scripts
+├── 📄 capacitor.config.js     # Capacitor configuration
+├── 📄 manifest.json           # PWA manifest
+├── 📄 sw.js                   # Service worker for PWA
+├── 📄 build.bat               # Windows build automation script
+├── 📁 electron/               # Windows desktop app
+│   └── main.js                # Electron main process
+├── 📁 assets/                 # App icons and assets
 ├── 📁 space-invaders/         # Space Invaders game
 │   ├── index.html
 │   ├── game.js
@@ -87,12 +96,20 @@ arcade/
 - **JavaScript (ES6+)**: Game logic and interactivity
 - **HTML5 Canvas**: 2D graphics rendering for all games
 
+### **App Conversion**
+- **Electron**: Windows desktop app wrapper
+- **Capacitor**: iOS and Android mobile app framework
+- **PWA**: Progressive Web App capabilities
+- **Service Worker**: Offline functionality and caching
+
 ### **Key Features**
 - **Vanilla JavaScript**: No frameworks or libraries required
 - **Responsive Design**: Works on desktop and mobile devices
 - **Local Storage**: High score persistence
 - **Keyboard Controls**: Full keyboard support for all games
+- **Touch Controls**: Mobile-optimized touch interfaces
 - **Retro Styling**: Authentic arcade aesthetic with green terminal theme
+- **Cross-Platform**: Native apps for Windows, iOS, and Android
 
 ## 🚀 Getting Started
 
@@ -115,6 +132,12 @@ arcade/
 - **GitHub Pages**: Enable GitHub Pages in repository settings
 - **Any static hosting**: Upload all files to any web server
 - **Local hosting**: Serve files from any web server
+
+### **Native Apps**
+- **Windows**: Run `npm run build:win` to create installer
+- **iOS**: Use Capacitor with Xcode for App Store distribution
+- **Android**: Use Capacitor with Android Studio for Play Store
+- **PWA**: Install from browser for app-like experience
 
 ## 🎮 How to Play
 
